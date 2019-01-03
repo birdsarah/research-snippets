@@ -1,0 +1,40 @@
+<aside class="logo">
+
+	{% if page.url == '/index.html' or page.url == '/' %}
+		{% assign link = '/about' %}
+		{% assign prompt = 'About the Authors' %}
+	{% else %}
+		{% assign link = '/' %}
+		{% assign prompt = 'Back to Index' %}
+	{% endif %}
+
+
+	<a href="{{ link | prepend: site.baseurl | prepend: site.url }}">
+        Snippets from Research <span id="gs"></span>
+	</a>
+	<span class="logo-prompt code">{{ prompt }}</span>
+
+    <script>
+        var choices = [
+            'Gophers', 
+            'Goats',
+            'Ghosts',
+            'Gremlins',
+            'Giraffes',
+            'Gannets',
+            'Gorillas',
+            'Geckos',
+            'Gerbils',
+            'Gibbons',
+            'Geese',
+            'Glow Worms',
+            'Guinea Pigs',
+            'Guppies',
+            'Grouse',
+            'Greyhounds',
+        ];
+        var pick = choices[Math.floor(Math.random() * choices.length)];
+        document.getElementById('gs').innerText = pick;
+    </script>
+
+</aside>
