@@ -3,7 +3,7 @@ title:              "Research Snippets"
 description:        "Snippets from the Research Group"
 
 # Site Settings
-url:                http://researchsnippets.com # main url
+url:                https://researchsnippets.com # main url
 baseurl:            
 permalink:          :title # Post permalink
 timezone:           America/Chicago # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
